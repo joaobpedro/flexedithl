@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "2if",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#supports"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.",
+				"match": "\\b(HEAD|CONTROL|VISRES|FRICMODEL|CROSS|GEOM|CONTINT|LMERGE|SMERGE|CMERGE|MATERIAL|GLBON|GCLOAD|GPDISP|HIST)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+            "patterns": [{
+                "name": "comment.line.number-sign.xpp",
+                "match": "#.*"
+            }]
+		},
+		"supports": {
+            "patterns": [{
+                "name": "string.quoted.double.",
+                "match": "\\b(BEAM|SHELL|CI|CO|S|CLOSED)\\b"
+            }]
+		}
+	},
+	"scopeName": "source.2if"
+}

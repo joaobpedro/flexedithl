@@ -1,0 +1,25 @@
+{
+  "name": "2if",
+  "displayName": "2if",
+  "description": "syntax highlight for flexedit files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "2if",
+      "aliases": ["2if", ""],
+      "extensions": [".2if"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "2if",
+      "scopeName": "source.2if",
+      "path": "./syntaxes/.tmLanguage.json"
+    }]
+  }
+}
