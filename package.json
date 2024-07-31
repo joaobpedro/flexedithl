@@ -3,7 +3,7 @@
   "displayName": "2if",
   "description": "syntax highlight for flexedit files",
   "version": "0.0.1",
-  "publisher": "jfpedro",
+  "publisher": "joaobpedro",
   "engines": {
     "vscode": "^1.91.0"
   },
