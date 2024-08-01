@@ -41,8 +41,8 @@
 		},
 		"supports": {
             "patterns": [{
-                "name": "string.quoted.double.",
-                "match": "\\b(BEAM|SHELL|CI|CO|S|CLOSED)\\b"
+                "name": "support.class",
+                "match": "\\b(BEAM|SHELL|CI|CO|S|CLOSED|AUTO)\\b"
             }]
 		}
 	},
